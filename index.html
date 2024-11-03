@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>DZ18</title>
+</head>
+<body>
+    <form>
+        <br>
+        <input type="password" id="password" placeholder="Пароль">
+        <br>
+        <br>
+        <input type="password" id="confirmPassword" placeholder="Повторите Пароль">
+        <br>
+        <br>
+        <input type="button" href="#" onclick="ansValidation(event)" value="Отправить">
+    </form>
+    <script>
+function ansValidation(ev) {
+    ev.preventDefault
+    let nameValue = "test";
+    let passValue = document.getElementById("password").value
+    let confpassValue = document.getElementById("confirmPassword").value
+    if(typeof nameValue !== "string"){
+        window.alert("Пожалуйста, введите ваше имя еще раз")
+    }else if(passValue !== confpassValue) {
+       window.alert("Пароли не совпадают!")
+    }
+}
+    </script>
+</body>
+</body>
+</html>
